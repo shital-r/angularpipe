@@ -7,6 +7,7 @@ import { EmpGenderPipe } from './emp-gender.pipe';
 import { PipeComponent } from './pipe/pipe.component';
 import { GenderComponent } from './pipe/gender/gender.component';
 import { CustomPipe } from './custom.pipe';
+import { LoginComponent } from './pipe/login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CustomPipe } from './custom.pipe';
     EmpGenderPipe,
     PipeComponent,
     GenderComponent,
-    CustomPipe
+    CustomPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
