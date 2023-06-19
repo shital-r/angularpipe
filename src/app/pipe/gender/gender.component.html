@@ -1,0 +1,27 @@
+<div class="container w-50">
+    <table class="table table-stripped mt-5">
+        <thead>
+            <tr>
+                <th>emp-Name</th>
+                <th>emp-Id</th>
+                <th>emp-salary</th>
+                <th>emp-Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of employeeArr">
+                <td>{{item.name |custom :item.gender}}</td>
+                <!-- apply two pipes on one element -->
+                <!-- <td>{{item.name |custom :item.gender |uppercase}}</td> -->
+
+                <td>{{item.id}}</td>
+                <td>{{item.salary}}</td>
+                <td>{{item.gender}}</td>
+    
+    
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>{{"welcome" |slice:0:1|uppercase}}</h3>
